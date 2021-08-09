@@ -333,7 +333,7 @@ function SubmitFormToCalculator()
 			else { alert('\n\nContent request error, status code:\n'+http.status+' '+http.statusText); }
 		}
 	}
-	http.open("POST","/luckynumbers/DailyLuckyNumbers.php",true);
+	http.open("POST","DailyLuckyNumbers.php",true);
 	http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	http.send(params.join("&"));
 	return true;
